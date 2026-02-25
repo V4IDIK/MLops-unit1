@@ -1,9 +1,9 @@
-import pandas as pd
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
-import joblib
+import pandas as pd # type: ignore
+from sklearn.datasets import load_iris # type: ignore
+from sklearn.model_selection import train_test_split # type: ignore
+from sklearn.linear_model import LogisticRegression # type: ignore
+from sklearn.metrics import accuracy_score # type: ignore
+import joblib # type: ignore
 import os
 
 def main():
