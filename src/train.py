@@ -47,7 +47,7 @@ def main():
     os.makedirs('models', exist_ok=True)
     model_path = 'models/logistic_model.pkl'
     joblib.dump(model, model_path)
-    print(f"\nModel saved successfully to {model_path}")
+    print(f"\nModel saved successfully to {model_path}\n")
 
 if __name__ == "__main__":
     main()
