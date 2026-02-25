@@ -1,4 +1,4 @@
-# MLOps Unit 1 - Basic Workflow
+# MLOps Unit 1
 
 ## Project Objective
 This repository demonstrates a foundational MLOps workflow. It includes version control, standard project structuring, model training, evaluation, and reproducibility practices.
