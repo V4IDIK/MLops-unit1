@@ -1,4 +1,3 @@
-import pandas as pd
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -10,15 +9,17 @@ import os
 def main():
     # 1. Load dataset & print basic statistics
     print("Loading Breast Cancer dataset...")
-    data = load_breast_cancer(as_frame=True)
-    df = data.frame
+    # `as_frame=True` requires pandas; using `as_frame=False` avoids a hard pandas dependency.
+    data = load_breast_cancer(as_frame=False)
     
     print("\n--- Basic Dataset Statistics ---")
-    print(df.describe())
+    X = data.data
+    y = data.target
+    print(f"X shape: {X.shape}")
+    print(f"y distribution: {{0: {int((y == 0).sum())}, 1: {int((y == 1).sum())}}}")
+    print(f"Number of features: {X.shape[1]}")
 
     # 2. Split data into training and testing sets
-    X = df.drop(columns=['target'])
-    y = df['target']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # 3. Train a simple ML model
