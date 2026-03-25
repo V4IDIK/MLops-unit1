@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: heart-disease-training-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: ml-container
+        image: heart-disease-model:v2
+        imagePullPolicy: IfNotPresent 
+      restartPolicy: Never

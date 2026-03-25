@@ -1,0 +1,10 @@
+artifact_location: file:///Users/dix/mlops-unit1/mlruns/147886112447453894/models/m-db01441485614c7ca1dce478fa6614ed/artifacts
+creation_timestamp: 1774412261310
+experiment_id: '147886112447453894'
+last_updated_timestamp: 1774412262765
+model_id: m-db01441485614c7ca1dce478fa6614ed
+model_type: null
+name: random_forest_model
+source_run_id: be297faf0d3849d199c9b7ab96a4dd05
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/dix/mlops-unit1/mlruns/147886112447453894/be297faf0d3849d199c9b7ab96a4dd05/artifacts
+end_time: 1774412262767
+entry_point_name: ''
+experiment_id: '147886112447453894'
+lifecycle_stage: active
+run_id: be297faf0d3849d199c9b7ab96a4dd05
+run_name: big-pig-319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774412261228
+status: 3
+tags: []
+user_id: dix
