@@ -1,0 +1,5 @@
+2026-03-25 21:07:57,024 - INFO - --- Starting New ML Pipeline Run ---
+2026-03-25 21:07:57,377 - INFO - Successfully loaded dataset with 891 rows.
+2026-03-25 21:07:57,423 - INFO - Model trained successfully. Latency: 0.0392 seconds.
+2026-03-25 21:07:57,425 - INFO - Model Evaluation Accuracy: 0.6713
+2026-03-25 21:07:57,425 - WARNING - ALERT: Model accuracy dropped below 70% threshold! Immediate retraining required.
