@@ -1,0 +1,35 @@
+name: Model Training Pipeline
+
+# 1. Trigger the workflow on pushes to the main branch
+on:
+  push:
+    branches:
+      - main
+
+# 2. Define the jobs to run
+jobs:
+  train-and-evaluate:
+    # Use a standard Linux runner in the cloud
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step A: Copy your code from the repository onto the runner
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step B: Install Python
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # Step C: Install the libraries from your requirements.txt
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step D: Run your ML training script!
+      - name: Train and Evaluate Model
+        run: |
+          python src/train.py
